@@ -31,4 +31,4 @@ Clone the Repository
 clone the repository and put it inside vscode terminal:
 ```  ```
 
-### Author: Sadia Islam Mou
+### Members: Sadia Islam Mou, Shazneen Rahman, Tabassum Islam, Rubaiya Binte Kibria, Shifa Haque
