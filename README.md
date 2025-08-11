@@ -29,7 +29,7 @@ To get started with the project, follow these steps:
 
 Clone the Repository
 
-clone the repository and put it inside vscode terminal:
+clone the repository and put it inside vscode terminal: https://github.com/Sadiaa55/CSE327-Group-02.git
 ```  ```
 
 ### Members: Sadia Islam Mou, Shazneen Rahman, Tabassum Islam, Rubaiya Binte Kibria, Shifa Haque
