@@ -14,7 +14,7 @@ class HomeScreen extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: const Text('Cine Ticket'),
+        title: const Text('Chayachobi'),
         actions: [
           IconButton(
             icon: const Icon(Icons.favorite),
@@ -37,7 +37,7 @@ class HomeScreen extends StatelessWidget {
             Padding(
               padding: const EdgeInsets.symmetric(horizontal: 24),
               child: Text(
-                "Welcome to Cine Ticket",
+                "Welcome to Chayachobi",
                 style: Theme.of(context).textTheme.titleLarge,
               ),
             ),
