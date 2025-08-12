@@ -5,6 +5,7 @@ import 'package:flutter_application_1/feature/home/presentation/widget/category_
 import 'package:flutter_application_1/feature/home/presentation/widget/now_playing_movie_widget.dart';
 import 'package:flutter_application_1/feature/home/presentation/widget/section_title_widget.dart';
 import 'package:flutter_application_1/feature/home/presentation/widget/upcoming_movie_widget.dart';
+import 'package:flutter_application_1/feature/ticket_refund/refund_widget.dart'; 
 import 'package:flutter_application_1/feature/home/presentation/widget/customer_support_widget.dart'; // Import the new widget
 
 class HomeScreen extends StatelessWidget {
@@ -69,6 +70,25 @@ class HomeScreen extends StatelessWidget {
             ),
             const SizedBox(height: 16),
             const NowPlayingMovieWidget(),
+
+            const SizedBox(height: 16),
+            const Padding(
+              padding: EdgeInsets.symmetric(horizontal: 24),
+              child: SectionTitleWidget(title: "Ticket Refund"),
+            ),
+             Padding(
+              padding: const EdgeInsets.symmetric(horizontal: 24, vertical: 16),
+              child: Align(
+                      child: ElevatedButton(
+                         onPressed: () {
+                          Navigator.pushNamed(context, AppRouteName.refund);
+                         },
+                         child: const Text("Go to Refund Page"),
+                         ),
+                      
+              ),
+              
+            ),
             const SizedBox(height: 16),
             const Padding(
               padding: EdgeInsets.symmetric(horizontal: 24),
