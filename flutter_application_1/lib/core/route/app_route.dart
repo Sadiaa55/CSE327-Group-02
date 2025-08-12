@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_application_1/core/route/app_route_name.dart';
-import 'package:flutter_application_1/feature/home/presentation/home_screen.dart';
+import 'package:flutter_application_1/feature/home_screen.dart';
 import 'package:flutter_application_1/feature/movie_booking/model/presentation/movie_booking_screen.dart';
 import 'package:flutter_application_1/feature/movie_details/model/presentation/movie_detail_screen.dart';
 import 'package:flutter_application_1/feature/movie_wishlist/presentation/movie_wishlist_screen.dart';
