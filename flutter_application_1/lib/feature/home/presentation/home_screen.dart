@@ -5,7 +5,8 @@ import 'package:flutter_application_1/feature/home/presentation/widget/category_
 import 'package:flutter_application_1/feature/home/presentation/widget/now_playing_movie_widget.dart';
 import 'package:flutter_application_1/feature/home/presentation/widget/section_title_widget.dart';
 import 'package:flutter_application_1/feature/home/presentation/widget/upcoming_movie_widget.dart';
-import 'package:flutter_application_1/feature/home/presentation/widget/customer_support_widget.dart'; // Import the new widget
+import 'package:flutter_application_1/feature/home/presentation/widget/customer_support_widget.dart'; 
+import 'package:flutter_application_1/feature/home/presentation/widget/Search_widget.dart'; // Import the new widget
 
 class HomeScreen extends StatelessWidget {
   const HomeScreen({super.key});
@@ -73,6 +74,14 @@ class HomeScreen extends StatelessWidget {
             const Padding(
               padding: EdgeInsets.symmetric(horizontal: 24),
               child: SectionTitleWidget(title: "Upcoming"),
+            ),
+            
+ const SizedBox(height: 16),
+            const SearchWidget(),
+            const SizedBox(height: 16),
+            const Padding(
+              padding: EdgeInsets.symmetric(horizontal: 24),
+              child: SectionTitleWidget(title: "Search"),
             ),
             const SizedBox(height: 16),
             const UpcomingMovieWidget(),
