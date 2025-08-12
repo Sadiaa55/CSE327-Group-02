@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_application_1/core/route/app_route_name.dart';
 import 'package:flutter_application_1/feature/home/presentation/widget/banner_widget.dart';
-import 'package:flutter_application_1/feature/home/presentation/widget/category_widget.dart';
+import 'package:flutter_application_1/feature/genre_setting/category_widget.dart';
 import 'package:flutter_application_1/feature/home/presentation/widget/now_playing_movie_widget.dart';
 import 'package:flutter_application_1/feature/home/presentation/widget/section_title_widget.dart';
 import 'package:flutter_application_1/feature/home/presentation/widget/upcoming_movie_widget.dart';
