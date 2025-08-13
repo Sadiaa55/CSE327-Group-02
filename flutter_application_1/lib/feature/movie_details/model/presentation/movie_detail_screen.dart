@@ -91,7 +91,7 @@ class MovieDetailScreen extends StatelessWidget {
             const SizedBox(height: 16),
             Text(
               movie.title,
-              style: Theme.of(context).textTheme.headline5,
+              style: Theme.of(context).textTheme.headlineSmall,
             ),
             const Divider(height: 32),
             Text(

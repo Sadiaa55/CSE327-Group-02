@@ -5,7 +5,8 @@ import 'package:flutter_application_1/feature/movie_booking/model/presentation/m
 import 'package:flutter_application_1/feature/movie_details/model/presentation/movie_detail_screen.dart';
 import 'package:flutter_application_1/feature/movie_wishlist/presentation/movie_wishlist_screen.dart';
 import 'package:flutter_application_1/feature/search/presentation/pages/search_screen.dart';
-
+import 'package:flutter_application_1/feature/ticket-refund/refund_widget.dart';
+import 'package:flutter_application_1/feature/home/vip-seat-booking-screen/vip_seat_booking_screen.dart';
 
 class AppRoute {
   static Route<dynamic>? generate(RouteSettings settings) {
@@ -63,8 +64,6 @@ class AppRoute {
             );
           },
         );
-
-        /// New Search Route
       case AppRouteName.search:
         return PageRouteBuilder(
           settings: settings,
@@ -80,8 +79,8 @@ class AppRoute {
             );
           },
         );
-        import 'package:flutter_application_1/feature/ticket-refund/refund_widget.dart';                                      2nd part code:  case AppRouteName.refund:
-        return PageRouteBuilder(
+         case AppRouteName.refund:
+         return PageRouteBuilder(
           settings: settings,
           pageBuilder: (, _, _) => const RefundWidget(),
           transitionDuration: const Duration(milliseconds: 200),
@@ -95,6 +94,21 @@ class AppRoute {
             );
           },
         );
+        case AppRouteName.vipBooking:
+  return PageRouteBuilder(
+    settings: settings,
+    pageBuilder: (, _, _) => const VIPSeatBookingScreen(),
+    transitionDuration: const Duration(milliseconds: 200),
+    transitionsBuilder: (, animation, _ , child) {
+      return SlideTransition(
+        position: Tween<Offset>(
+          begin: const Offset(1, 0),
+          end: Offset.zero,
+        ).animate(animation),
+        child: child,
+      );
+    },
+  );
     }
     return null;
   }

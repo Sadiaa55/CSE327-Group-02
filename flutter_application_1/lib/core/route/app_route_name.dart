@@ -8,4 +8,5 @@ class AppRouteName {
   static const String refund = '/refund';
   static const String login = '/login';
   static const String signup = '/signup';
+  static const String vipBooking = '/vip-booking';
 }
