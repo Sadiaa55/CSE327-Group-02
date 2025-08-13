@@ -80,6 +80,21 @@ class AppRoute {
             );
           },
         );
+        import 'package:flutter_application_1/feature/ticket-refund/refund_widget.dart';                                      2nd part code:  case AppRouteName.refund:
+        return PageRouteBuilder(
+          settings: settings,
+          pageBuilder: (, _, _) => const RefundWidget(),
+          transitionDuration: const Duration(milliseconds: 200),
+          transitionsBuilder: (, animation, _, child) {
+            return SlideTransition(
+              position: Tween<Offset>(
+                begin: const Offset(1, 0),
+                end: Offset.zero,
+              ).animate(animation),
+              child: child,
+            );
+          },
+        );
     }
     return null;
   }

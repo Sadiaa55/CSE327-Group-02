@@ -5,4 +5,7 @@ class AppRouteName {
   static const String movieBooking = "/movie-booking";
   static const String wishlist = '/wishlist';
   static const String search = '/search';
+  static const String refund = '/refund';
+  static const String login = '/login';
+  static const String signup = '/signup';
 }
