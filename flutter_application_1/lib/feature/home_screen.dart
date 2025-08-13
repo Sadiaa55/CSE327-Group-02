@@ -116,6 +116,8 @@ class HomeScreen extends StatelessWidget {
             const UpcomingMovieWidget(),
             const SizedBox(height: 16),
             const CustomerSupportWidget(), // Add the new widget here
+
+
           ],
         ),
       ),
